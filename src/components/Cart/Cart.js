@@ -159,9 +159,9 @@ return (
             <FormLabel color={'white'} htmlFor='name'>Name</FormLabel>
             <Input color={'white'} width='auto' value={email} type='email' onChange={event => setEmail(event.target.value)} />
             <FormLabel color={'white'} htmlFor='email' >Email</FormLabel>
-            <Input width='auto' value={name} type='name' onChange={event => setName(event.target.value)} />
+            <Input color={'white'} width='auto' value={name} type='name' onChange={event => setName(event.target.value)} />
             <FormLabel color={'white'} htmlFor='email' >Address</FormLabel>
-            <Input width='auto' value={address} type='address' onChange={event => setAddress(event.target.value)} />
+            <Input color={'white'} width='auto' value={address} type='address' onChange={event => setAddress(event.target.value)} />
             
           </FormControl>
           </Center>
