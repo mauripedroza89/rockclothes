@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { getProductById } from "../asyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { Heading, Center, Square, Circle } from "@chakra-ui/react";
+import { Heading, Center} from "@chakra-ui/react";
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from "../../services/firebase";
 

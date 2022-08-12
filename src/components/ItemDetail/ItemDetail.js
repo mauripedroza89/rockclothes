@@ -7,9 +7,6 @@ import {
     Stack,
     Image,
     Button,
-    Icon,
-    chakra,
-    Tooltip,
     Flex,
   } from '@chakra-ui/react';
 import {useNavigate} from "react-router-dom";
@@ -18,8 +15,6 @@ import ItemCount from '../ItemCount/ItemCount';
 import CartContext from '../../context/CartContext'
 import { useNotification } from '../../notification/Notification';
 
-
-  
 
 
 const ItemDetail = ({id,name,img,description,price,stock}) => {

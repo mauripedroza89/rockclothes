@@ -6,13 +6,9 @@ import {
     Text,
     Stack,
     Image,
-    Button,
-    Icon,
-    chakra,
-    Tooltip,
+    Button
   } from '@chakra-ui/react';
   import { Link } from 'react-router-dom';
-  import { FiShoppingCart } from 'react-icons/fi';
 
 const Item = ({id,name,img,price}) => {
     return (

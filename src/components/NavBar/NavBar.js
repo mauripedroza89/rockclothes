@@ -13,7 +13,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Avatar
 } from '@chakra-ui/react';
@@ -25,9 +24,6 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 import logo from '../../images/rocklogo.png';
-
-
-
 
 export default function NavBar() {
   const { isOpen, onToggle } = useDisclosure();

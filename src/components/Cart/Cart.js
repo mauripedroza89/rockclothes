@@ -13,8 +13,6 @@ import {
     Input,
     Text,
   FormLabel,
-  FormErrorMessage,
-  FormHelperText,
     useColorModeValue as mode,
   } from '@chakra-ui/react';
 import {useNavigate} from "react-router-dom";
@@ -22,7 +20,7 @@ import CartContext from '../../context/CartContext';
 import CartItemList from '../CartItemList/CartItemList';
 import { useNotification } from '../../notification/Notification';
 //firebase para generar orden
-import { addDoc, collection, updateDoc, doc, writeBatch, getDocs, query, where, documentId } from 'firebase/firestore';
+import { addDoc, collection, writeBatch, getDocs, query, where, documentId } from 'firebase/firestore';
 import { db } from '../../services/firebase/index';
 
   
@@ -68,7 +66,7 @@ const Cart = () => {
             
             response.docs.forEach(doc => {
               const dataDoc = doc.data()
-              const prod = cart.find(prod => prod.id == doc.id)
+              const prod = cart.find(prod => prod.id === doc.id)
               const prodQuantity = prod.quantity
 
               if(dataDoc.stock >= prodQuantity) {

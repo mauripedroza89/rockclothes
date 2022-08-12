@@ -1,10 +1,8 @@
 import { useContext } from 'react';
 import CartContext from '../../context/CartContext';
 import { 
-    CloseButton, 
     Flex, 
     Heading, 
-    Link,
     Stack,
     Box,
     Text,
